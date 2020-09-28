@@ -7,11 +7,11 @@
 <!--viewpoint is the visible area of a webpage, content part sets the width to follow the width of the device,
 initial scale sets the initial loading zoom level-->
 <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="assets/css/style.css">
 <!--Box icons code-->
 <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Personal Portifolio</title>
+    <title>Personal Portfolio</title>
     <!--SCRIPT JS AND SCROLL REVEAL-->
     <script src="script.js"></script>
     <script scr="https://unpkg.com/scrollreveal"></script>
@@ -22,11 +22,181 @@ initial scale sets the initial loading zoom level-->
     <!--Headers-->
     <header class="page-header">
         <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav_heading">Michelle Fourie</a>
+            </div>
+            <!--Navigation menu-->
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#introduction" class="nav_link active">Introduction</a></li>
+                    <li class="nav_item"><a href="#aboutme" class="nav_link active">About Me</a></li>
+                    <li class="nav_item"><a href="#expierence" class="nav_link active">Experience</a></li>
+                    <li class="nav_item"><a href="#skillsandinterests" class="nav_link active">Skills & Interests</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link active">Contact Me</a></li>
+                </ul>
+
+            </div>
+
+            <div class ="nav_toggle" id="nav_toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <!--
         <h1>This is a Heading</h1>
-        <p>This is a paragraph.</p>
-        
+        <p>This is a paragraph.</p>-->
+
         </nav>
     </header>
+
+    
+    <main class="page-main">
+        <!--Introduction part of the website-->
+        <section class="introduction bd-grid" id="introduction">
+            <div class="introduction_information">
+                <h1 class="introduction_title">Welcome to my portfolio,<br>I'm <span class="introduction_title-color">Michelle</span><br>Third Year IT student </h1>
+
+                <a href="#" class="button">Contact Me</a>
+            </div>
+            <!--social platforms-->
+            <div class="introduction_socialplatforms">
+                <a href="" class="introduction_social-icon"><i class='bx bxl-whatsapp'></i></a>
+                <a href="" class="introduction_social-icon"><i class='bx bxl-github'></i></a>
+                <a href="" class="introduction_social-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="" class="introduction_social-icon"><i class='bx bxl-facebook'></i></a>
+            </div>
+
+            <div class="introduction_image">
+                <img src="assets/images/intro.jpg" alt="">
+            </div>
+        </section> 
+        
+        <!--About me page-->
+        <section class="about_section" id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about_container bd-grid">
+                <div class="about_img">
+                    <img src="assets/images/about.jpg" alt="">
+                </div>
+                <!--About me text, needs editing-->
+                <div>
+                    <h2 class="about_subtitle">I'm Michelle</h2>
+                    <p class="about_information">I am currently enrolled at the North-west University as a third year BSc Information Technology student.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--experience-->
+        <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience_container bd-grid">
+                <div class="work_img">
+                    <img src="assets/images/load.png" alt="">
+                </div>
+                <div class="work_img">
+                    <img src="assets/images/2.png" alt="">
+                </div>
+                <div class="work_img">
+                    <img src="assets/images/3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--Skills & interests-->
+        <section class="skills_sec" id="skills">
+            <h2 class="section-title">Skills & Interests</h2>
+
+            <div class="skills_container bd-grid">
+                <div>
+                    <h2 class="skills_sub">Profesional Skills</h2>
+                    <p class="skills_info">The following skills are courses I have completed and currently completing during my studies. </p>
+                    <div class="skills_perc">
+                        <div class="skills_names">
+                            <i class='bx bxl-html5 skills_icon'></i>
+                            <span class="skills_name">HTML</span>
+                        </div>
+                        <div class="skills_bar skills_html">
+
+                        </div>
+                        <div>
+                            <span class="skills_percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skills_perc">
+                        <div class="skills_names">
+                            <i class='bx bxl-css3 skills_icon'></i>
+                            <span class="skills_name">CSS</span>
+                        </div>
+                        <div class="skills_bar skills_css">
+
+                        </div>
+                        <div>
+                            <span class="skills_percentage">60%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills_perc">
+                        <div class="skills_names">
+                            <i class='bx bxl-javascript skills_icon'></i>
+                            <span class="skills_name">Java script</span>
+                        </div>
+                        <div class="skills_bar skills_js">
+
+                        </div>
+                        <div>
+                            <span class="skills_percentage">65%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills_perc">
+                        <div class="skills_names">
+                            <i class='bx bxl-git skills_icon'></i>
+                            <span class="skills_name">Git</span>
+                        </div>
+                        <div class="skills_bar skills_git">
+
+                        </div>
+                        <div>
+                            <span class="skills_percentage">65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/images/work.jpg" alt="" class="skills_img">
+                </div>
+            </div>
+         
+        </section>
+
+        <!--Contact me-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact_container bd-grid">
+                <from action="" class="contact_form">
+                    <input type="text" placeholder="Name" class="contact_input">
+                    <input type="mail" placeholder="Email" class="contact_input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact_input"></textarea>
+                    <input type="button" value="Enter" class="contact_button button">
+                </from>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer class="footer">
+            <p class="footer_title">Michelle</p>
+            <div class="footer_social">
+                <a href="#" class="footer_icon"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer_icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer_icon"><i class="bx bxl-whatsapp"></i></a>
+                <a href="#" class="footer_icon"><i class="bx bxl-gmail"></i></a>
+            </div>
+            <p>&#169; 2020 copyright all </p>
+        </footer>
+
+        
+     </main>
 
 </body>
 
