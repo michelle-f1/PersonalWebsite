@@ -1,0 +1,17 @@
+{
+    "configurations": [
+    {
+        "name": "Launch Program",
+        "program": "${workspaceFolder}/*.html",
+        "request": "launch",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "pwa-node",
+        "outFiles": [
+            "${workspaceFolder}/**/*.js",
+            
+        ]
+    }
+    ]
+}
