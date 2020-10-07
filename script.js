@@ -27,7 +27,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 /*scroll animation*/
 const scrollrev = ScrollReveal({
     origin: 'top',
-    distance: '80px',
+    distance: '90px',
     duration: 2000,
     reset: true
 });
@@ -45,6 +45,7 @@ scrollrev.reveal('.about_information',{delay: 400});
 
 /*scroll to expierence */
 scrollrev.reveal('.work_img',{interval: 200});
+scrollrev.reveal('.download-cv',{interval: 200});
 
 /*Scroll to skills and interests */
 scrollrev.reveal('.skills_sub',{});
